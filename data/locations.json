@@ -193,5 +193,18 @@
     "accepts": ["denim jeans", "denim jackets", "any brand denim"],
     "website": "https://www.madewell.com/do-well",
     "description": "Bring old jeans (any brand) to Madewell and receive $20 off a new pair. Denim is recycled into housing insulation."
+  },
+  {
+    "id": 16,
+    "name": "Planet Aid Drop-Off — Skippack",
+    "type": "recycling-bin",
+    "address": "4000 Bridge Rd, Skippack, PA 19474",
+    "lat": 40.2228,
+    "lng": -75.3975,
+    "phone": "",
+    "hours": "24/7 drop-off",
+    "accepts": ["clothing", "shoes", "accessories", "linens"],
+    "website": "https://www.planetaid.org",
+    "description": "Yellow Planet Aid textile collection bin in Skippack Township. Accepts clothing, shoes, and textiles in any condition for reuse and recycling."
   }
 ]
