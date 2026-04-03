@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REGarment — Recycle Clothes in Montgomery County, PA</title>
+  <meta name="description" content="Find where and how to recycle, donate, and upcycle clothes in Montgomery County, Pennsylvania." />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Favicon (green recycle emoji) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♻️</text></svg>" />
+</head>
+<body>
+
+  <!-- ========== Header / Nav ========== -->
+  <header>
+    <nav class="container nav-wrapper">
+      <a href="#" class="logo">RE<span>Garment</span></a>
+      <ul class="nav-links">
+        <li><a href="#map-section">Map</a></li>
+        <li><a href="#directory">Directory</a></li>
+        <li><a href="#tips">Tips &amp; Guides</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Give Your Clothes<br/><span>a Second Life</span></h1>
+      <p>Find recycling drop-offs, donation centers, and textile take-back programs across Montgomery County, Pennsylvania.</p>
+      <div class="hero-buttons">
+        <a href="#map-section" class="btn btn-primary">Explore the Map</a>
+        <a href="#tips" class="btn btn-outline">Learn How to Recycle</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Stats Bar ========== -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <div class="stat-number" id="stat-locations">0</div>
+      <div class="stat-label">Locations</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" id="stat-types">0</div>
+      <div class="stat-label">Categories</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Free to Use</div>
+    </div>
+  </div>
+
+  <!-- ========== Interactive Map ========== -->
+  <section class="map-section" id="map-section">
+    <div class="container">
+      <h2 class="section-title">Find a Drop-Off Near You</h2>
+      <p class="section-subtitle">Click any marker for details — address, hours, accepted items, and more.</p>
+      <div id="map"></div>
+      <div class="map-legend">
+        <div class="legend-item"><span class="legend-dot donation"></span> Donation Center</div>
+        <div class="legend-item"><span class="legend-dot recycling-bin"></span> Recycling Bin</div>
+        <div class="legend-item"><span class="legend-dot municipal"></span> Municipal Program</div>
+        <div class="legend-item"><span class="legend-dot retail-takeback"></span> Retail Take-Back</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Directory ========== -->
+  <section class="directory-section" id="directory">
+    <div class="container">
+      <h2 class="section-title">Location Directory</h2>
+      <p class="section-subtitle">Search by name, address, or item type. Click a card to view it on the map.</p>
+
+      <div class="directory-controls">
+        <input type="text" id="search-input" class="search-input" placeholder="Search locations, addresses, items..." />
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="donation">Donation</button>
+        <button class="filter-btn" data-filter="recycling-bin">Recycling Bin</button>
+        <button class="filter-btn" data-filter="municipal">Municipal</button>
+        <button class="filter-btn" data-filter="retail-takeback">Retail Take-Back</button>
+      </div>
+
+      <div class="directory-grid" id="directory-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== Tips & Guides ========== -->
+  <section class="tips-section" id="tips">
+    <div class="container">
+      <h2 class="section-title">Tips &amp; Guides</h2>
+      <p class="section-subtitle">Everything you need to know about giving your clothes a second life.</p>
+
+      <div class="tips-grid">
+        <!-- Tip 1 -->
+        <div class="tip-card">
+          <div class="tip-icon">👕</div>
+          <h3>What Can Be Recycled?</h3>
+          <p>Almost all textiles can be recycled — even stained or torn items. Acceptable items include:</p>
+          <ul>
+            <li>Clothing (all types and conditions)</li>
+            <li>Shoes (tied together in pairs)</li>
+            <li>Bed sheets, towels, and curtains</li>
+            <li>Belts, bags, and accessories</li>
+            <li>Stuffed animals</li>
+          </ul>
+        </div>
+
+        <!-- Tip 2 -->
+        <div class="tip-card">
+          <div class="tip-icon">🧺</div>
+          <h3>Preparing Your Items</h3>
+          <p>A little prep goes a long way:</p>
+          <ul>
+            <li>Wash and dry items before donating</li>
+            <li>Place items in a sealed bag to keep them dry</li>
+            <li>Separate donations (good condition) from recycling (worn/torn)</li>
+            <li>Check pockets for personal items</li>
+            <li>No wet or mildewed items — these can contaminate a batch</li>
+          </ul>
+        </div>
+
+        <!-- Tip 3 -->
+        <div class="tip-card">
+          <div class="tip-icon">♻️</div>
+          <h3>Donate vs. Recycle</h3>
+          <p><strong>Donate</strong> items in good, wearable condition to thrift stores and charities — they'll be sold or given to someone in need.</p>
+          <p style="margin-top:.5rem;"><strong>Recycle</strong> worn-out, stained, or torn items through textile bins or retail take-back programs. They're shredded into fibers for insulation, rags, or new fabric.</p>
+        </div>
+
+        <!-- Tip 4 -->
+        <div class="tip-card">
+          <div class="tip-icon">🪡</div>
+          <h3>Upcycling Ideas</h3>
+          <p>Before tossing it, get creative:</p>
+          <ul>
+            <li>Turn old t-shirts into reusable shopping bags</li>
+            <li>Convert jeans into shorts or a tote bag</li>
+            <li>Use fabric scraps for quilting or patches</li>
+            <li>Make cleaning rags from worn towels</li>
+            <li>Create pet toys from old socks</li>
+          </ul>
+        </div>
+
+        <!-- Tip 5 -->
+        <div class="tip-card">
+          <div class="tip-icon">🏪</div>
+          <h3>Retail Take-Back Programs</h3>
+          <p>Many major retailers now accept old clothes for recycling — regardless of brand or condition:</p>
+          <ul>
+            <li><strong>H&amp;M:</strong> Any brand, any condition — get 15% off coupon</li>
+            <li><strong>The North Face:</strong> Clothes the Loop — any brand clothing or shoes</li>
+            <li><strong>Madewell:</strong> Bring denim, get $20 off new jeans</li>
+            <li><strong>Patagonia:</strong> Worn Wear trade-in program</li>
+          </ul>
+        </div>
+
+        <!-- Tip 6 -->
+        <div class="tip-card">
+          <div class="tip-icon">🌍</div>
+          <h3>Why It Matters</h3>
+          <p>The average American throws away about <strong>81 pounds of clothing</strong> per year. Textile waste accounts for roughly 6% of municipal solid waste.</p>
+          <p style="margin-top:.5rem;">By recycling just one bag of clothes, you help save water, reduce greenhouse gas emissions, and keep textiles out of landfills. Every item counts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA Banner ========== -->
+  <div class="cta-banner">
+    <h2>Know a location we're missing?</h2>
+    <p>Help us grow this directory by suggesting new recycling and donation locations in Montgomery County.</p>
+    <a href="https://github.com/davidateek/REGarment/issues/new?title=New+Location+Suggestion&body=Name:%0AAddress:%0AType:%0ADetails:" target="_blank" class="btn btn-primary">Suggest a Location</a>
+  </div>
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>REGarment</h4>
+          <p>A community resource for clothing recycling in Montgomery County, PA. Reduce textile waste — give your garments a second life.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#map-section">Interactive Map</a></li>
+            <li><a href="#directory">Location Directory</a></li>
+            <li><a href="#tips">Tips &amp; Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="https://www.montcopa.org/753/Recycling" target="_blank">MontCo Recycling</a></li>
+            <li><a href="https://www.epa.gov/recycle/textiles" target="_blank">EPA Textile Recycling</a></li>
+            <li><a href="https://weardonaterecycle.org" target="_blank">Wear Donate Recycle</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 REGarment. Made with ♻️ for Montgomery County, PA. <a href="https://github.com/davidateek/REGarment" target="_blank" style="color:var(--green-light);">View on GitHub</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+
+  <!-- App Scripts -->
+  <script src="js/map.js"></script>
+  <script src="js/directory.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
