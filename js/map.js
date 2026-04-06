@@ -2,8 +2,9 @@
    map.js — Leaflet map initialization for REGarment
    ============================================================ */
 
-const MONTCO_CENTER = [40.15, -75.30];
-const DEFAULT_ZOOM = 11;
+const PA_CENTER = [40.9, -77.8];
+const PA_ZOOM = 7;
+const DEFAULT_COUNTY = 'Montgomery';
 
 const TYPE_COLORS = {
   'donation':        '#2d6a4f',
@@ -21,18 +22,74 @@ const TYPE_LABELS = {
 
 let map;
 let markers = [];
+let counties = [];
+let selectedCounty = DEFAULT_COUNTY;
 
-function initMap(locations) {
+async function initMap(locations) {
+  // Load county data
+  try {
+    const resp = await fetch('data/counties.json');
+    counties = await resp.json();
+  } catch (err) {
+    console.error('Failed to load counties:', err);
+  }
+
+  const defaultCounty = counties.find(c => c.name === DEFAULT_COUNTY) || { center: [40.15, -75.30], zoom: 11 };
+
   map = L.map('map', {
     scrollWheelZoom: false
-  }).setView(MONTCO_CENTER, DEFAULT_ZOOM);
+  }).setView(defaultCounty.center, defaultCounty.zoom);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 18
   }).addTo(map);
 
+  populateCountySelector();
   addMarkers(locations);
+}
+
+function populateCountySelector() {
+  const select = document.getElementById('county-select-map');
+  if (!select || counties.length === 0) return;
+
+  select.innerHTML = '';
+  counties.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c.name;
+    opt.textContent = c.name === 'All Pennsylvania' ? '🗺️ All Pennsylvania' : `${c.name} County`;
+    if (c.name === DEFAULT_COUNTY) opt.selected = true;
+    select.appendChild(opt);
+  });
+
+  select.addEventListener('change', (e) => {
+    selectedCounty = e.target.value;
+    flyToCounty(selectedCounty);
+
+    // Sync directory county selector
+    const dirSelect = document.getElementById('county-select-dir');
+    if (dirSelect) dirSelect.value = selectedCounty;
+
+    // Trigger directory re-render
+    if (typeof filterAndRender === 'function') filterAndRender();
+  });
+}
+
+function flyToCounty(countyName) {
+  const county = counties.find(c => c.name === countyName);
+  if (!county) return;
+  map.flyTo(county.center, county.zoom, { duration: 1.2 });
+}
+
+function getSelectedCounty() {
+  return selectedCounty;
+}
+
+function setSelectedCounty(name) {
+  selectedCounty = name;
+  const mapSelect = document.getElementById('county-select-map');
+  if (mapSelect) mapSelect.value = name;
+  flyToCounty(name);
 }
 
 function createMarkerIcon(type) {
@@ -63,11 +120,6 @@ function addMarkers(locations) {
       .bindPopup(createPopupHTML(loc));
     markers.push(marker);
   });
-
-  if (locations.length > 0) {
-    const group = L.featureGroup(markers);
-    map.fitBounds(group.getBounds().pad(0.1));
-  }
 }
 
 function clearMarkers() {

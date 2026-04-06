@@ -244,6 +244,41 @@ header {
   letter-spacing: 1px;
 }
 
+/* ---------- County Selector ---------- */
+.county-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  margin-bottom: 1.25rem;
+}
+
+.county-selector label {
+  font-weight: 600;
+  color: var(--gray-600);
+  font-size: .95rem;
+}
+
+.county-select {
+  padding: .6rem 1.25rem;
+  border: 2px solid var(--gray-200);
+  border-radius: var(--radius);
+  background: var(--white);
+  font-size: .95rem;
+  font-weight: 500;
+  color: var(--gray-800);
+  cursor: pointer;
+  transition: var(--transition);
+  min-width: 180px;
+}
+.county-select:focus {
+  outline: none;
+  border-color: var(--green-light);
+}
+.county-select:hover {
+  border-color: var(--green-mid);
+}
+
 /* ---------- Map Section ---------- */
 .map-section {
   padding: 4rem 0;

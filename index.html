@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>REGarment — Recycle Clothes in Montgomery County, PA</title>
-  <meta name="description" content="Find where and how to recycle, donate, and upcycle clothes in Montgomery County, Pennsylvania." />
+  <title>REGarment — Recycle Clothes Across Pennsylvania</title>
+  <meta name="description" content="Find where and how to recycle, donate, and upcycle clothes across Pennsylvania — starting with Montgomery County." />
 
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -38,7 +38,7 @@
   <section class="hero" id="home">
     <div class="container">
       <h1>Give Your Clothes<br/><span>a Second Life</span></h1>
-      <p>Find recycling drop-offs, donation centers, and textile take-back programs across Montgomery County, Pennsylvania.</p>
+      <p>Find recycling drop-offs, donation centers, and textile take-back programs across Pennsylvania.</p>
       <div class="hero-buttons">
         <a href="#map-section" class="btn btn-primary">Explore the Map</a>
         <a href="#tips" class="btn btn-outline">Learn How to Recycle</a>
@@ -51,6 +51,10 @@
     <div class="stat-item">
       <div class="stat-number" id="stat-locations">0</div>
       <div class="stat-label">Locations</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" id="stat-counties">0</div>
+      <div class="stat-label">Counties</div>
     </div>
     <div class="stat-item">
       <div class="stat-number" id="stat-types">0</div>
@@ -66,7 +70,11 @@
   <section class="map-section" id="map-section">
     <div class="container">
       <h2 class="section-title">Find a Drop-Off Near You</h2>
-      <p class="section-subtitle">Click any marker for details — address, hours, accepted items, and more.</p>
+      <p class="section-subtitle">Select a county and click any marker for details — address, hours, accepted items, and more.</p>
+      <div class="county-selector">
+        <label for="county-select-map">Browse by county:</label>
+        <select id="county-select-map" class="county-select"></select>
+      </div>
       <div id="map"></div>
       <div class="map-legend">
         <div class="legend-item"><span class="legend-dot donation"></span> Donation Center</div>
@@ -85,6 +93,7 @@
 
       <div class="directory-controls">
         <input type="text" id="search-input" class="search-input" placeholder="Search locations, addresses, items..." />
+        <select id="county-select-dir" class="county-select"></select>
         <button class="filter-btn active" data-filter="all">All</button>
         <button class="filter-btn" data-filter="donation">Donation</button>
         <button class="filter-btn" data-filter="recycling-bin">Recycling Bin</button>
@@ -180,7 +189,7 @@
   <!-- ========== CTA Banner ========== -->
   <div class="cta-banner">
     <h2>Know a location we're missing?</h2>
-    <p>Help us grow this directory by suggesting new recycling and donation locations in Montgomery County.</p>
+    <p>Help us grow this directory by suggesting new recycling and donation locations across Pennsylvania.</p>
     <a href="https://github.com/davidateek/REGarment/issues/new?title=New+Location+Suggestion&body=Name:%0AAddress:%0AType:%0ADetails:" target="_blank" class="btn btn-primary">Suggest a Location</a>
   </div>
 
@@ -190,7 +199,7 @@
       <div class="footer-grid">
         <div class="footer-col">
           <h4>REGarment</h4>
-          <p>A community resource for clothing recycling in Montgomery County, PA. Reduce textile waste — give your garments a second life.</p>
+          <p>A community resource for clothing recycling across Pennsylvania. Reduce textile waste — give your garments a second life.</p>
         </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
@@ -210,7 +219,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 REGarment. Made with ♻️ for Montgomery County, PA. <a href="https://github.com/davidateek/REGarment" target="_blank" style="color:var(--green-light);">View on GitHub</a></p>
+        <p>&copy; 2026 REGarment. Made with ♻️ for Pennsylvania. <a href="https://github.com/davidateek/REGarment" target="_blank" style="color:var(--green-light);">View on GitHub</a></p>
       </div>
     </div>
   </footer>

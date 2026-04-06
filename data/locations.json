@@ -3,12 +3,18 @@
     "id": 1,
     "name": "Goodwill Keystone Area — Norristown",
     "type": "donation",
+    "county": "Montgomery",
     "address": "2751 W Main St, Norristown, PA 19403",
     "lat": 40.1246,
     "lng": -75.3735,
     "phone": "(610) 539-2640",
     "hours": "Mon–Sat 9am–8pm, Sun 10am–6pm",
-    "accepts": ["clothing", "shoes", "accessories", "household textiles"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "household textiles"
+    ],
     "website": "https://www.goodwillkeystone.org",
     "description": "Goodwill accepts gently used clothing and textiles for resale. Items not sold are recycled."
   },
@@ -16,12 +22,18 @@
     "id": 2,
     "name": "Salvation Army Family Store — Lansdale",
     "type": "donation",
+    "county": "Montgomery",
     "address": "701 W Main St, Lansdale, PA 19446",
     "lat": 40.2418,
     "lng": -75.2962,
     "phone": "(215) 362-7498",
     "hours": "Mon–Sat 9am–7pm, Sun Closed",
-    "accepts": ["clothing", "shoes", "accessories", "linens"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens"
+    ],
     "website": "https://www.salvationarmy.org",
     "description": "Donate clothing and household textiles. Proceeds support community programs."
   },
@@ -29,12 +41,17 @@
     "id": 3,
     "name": "Habitat for Humanity ReStore — Colmar",
     "type": "donation",
+    "county": "Montgomery",
     "address": "500 Bethlehem Pike, Colmar, PA 18915",
     "lat": 40.2714,
     "lng": -75.2561,
     "phone": "(215) 822-2708",
     "hours": "Wed–Fri 10am–6pm, Sat 10am–4pm",
-    "accepts": ["clothing", "shoes", "household items"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "household items"
+    ],
     "website": "https://www.habitatmontdelco.org",
     "description": "ReStore accepts gently used clothing and household goods. Sales fund Habitat home-building."
   },
@@ -42,12 +59,19 @@
     "id": 4,
     "name": "American Textile Recycling Service — Conshohocken",
     "type": "recycling-bin",
+    "county": "Montgomery",
     "address": "200 Washington St, Conshohocken, PA 19428",
     "lat": 40.0784,
     "lng": -75.3018,
     "phone": "",
     "hours": "24/7 drop-off",
-    "accepts": ["clothing", "shoes", "linens", "stuffed animals", "bags"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "linens",
+      "stuffed animals",
+      "bags"
+    ],
     "website": "https://atrscollect.com",
     "description": "Unattended textile recycling bin. Accepts clothing in any condition — even stained or torn."
   },
@@ -55,12 +79,17 @@
     "id": 5,
     "name": "Planet Aid Drop-Off — Willow Grove",
     "type": "recycling-bin",
+    "county": "Montgomery",
     "address": "102 N York Rd, Willow Grove, PA 19090",
-    "lat": 40.1440,
+    "lat": 40.144,
     "lng": -75.1157,
     "phone": "",
     "hours": "24/7 drop-off",
-    "accepts": ["clothing", "shoes", "accessories"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories"
+    ],
     "website": "https://www.planetaid.org",
     "description": "Yellow drop-off bin for clothing recycling. Items are sorted and reused or recycled globally."
   },
@@ -68,12 +97,18 @@
     "id": 6,
     "name": "Cradles to Crayons — Conshohocken",
     "type": "donation",
+    "county": "Montgomery",
     "address": "117 W Elm St, Conshohocken, PA 19428",
     "lat": 40.0746,
     "lng": -75.2996,
     "phone": "(215) 955-2031",
     "hours": "Mon–Fri 9am–4pm",
-    "accepts": ["children's clothing", "coats", "shoes", "new socks & underwear"],
+    "accepts": [
+      "children's clothing",
+      "coats",
+      "shoes",
+      "new socks & underwear"
+    ],
     "website": "https://www.cradlestocrayons.org",
     "description": "Provides children in need with essential clothing. Accepts new and gently used kids' items."
   },
@@ -81,12 +116,18 @@
     "id": 7,
     "name": "Montgomery County Transfer Station — Plymouth Meeting",
     "type": "municipal",
+    "county": "Montgomery",
     "address": "1425 Conshohocken Rd, Plymouth Meeting, PA 19462",
     "lat": 40.1017,
     "lng": -75.2805,
     "phone": "(610) 278-3618",
     "hours": "Mon–Sat 7am–4pm",
-    "accepts": ["clothing", "shoes", "textiles", "household items"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "textiles",
+      "household items"
+    ],
     "website": "https://www.montcopa.org/753/Recycling",
     "description": "County-operated facility accepting textiles for recycling. Part of the county's recycling program."
   },
@@ -94,12 +135,18 @@
     "id": 8,
     "name": "Philly AIDS Thrift @ Giovanni's Room — Cheltenham",
     "type": "donation",
+    "county": "Montgomery",
     "address": "801 Old York Rd, Elkins Park, PA 19027",
     "lat": 40.0715,
     "lng": -75.1261,
     "phone": "(215) 379-9255",
     "hours": "Mon–Sat 11am–7pm, Sun 12pm–5pm",
-    "accepts": ["clothing", "shoes", "accessories", "vintage clothing"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "vintage clothing"
+    ],
     "website": "https://www.phillyaidsthrift.com",
     "description": "Thrift store benefiting AIDS-related causes. Accepts all clothing donations."
   },
@@ -107,12 +154,19 @@
     "id": 9,
     "name": "USAgain Textile Collection — Blue Bell",
     "type": "recycling-bin",
+    "county": "Montgomery",
     "address": "721 Dekalb Pike, Blue Bell, PA 19422",
     "lat": 40.1526,
     "lng": -75.2668,
     "phone": "",
     "hours": "24/7 drop-off",
-    "accepts": ["clothing", "shoes", "belts", "purses", "linens"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "belts",
+      "purses",
+      "linens"
+    ],
     "website": "https://usagain.com",
     "description": "Green and yellow recycling bins for textile collection. Diverts clothing from landfills."
   },
@@ -120,12 +174,18 @@
     "id": 10,
     "name": "Community Thrift Shop — Ardmore",
     "type": "donation",
+    "county": "Montgomery",
     "address": "20 W Lancaster Ave, Ardmore, PA 19003",
     "lat": 40.0076,
     "lng": -75.2865,
     "phone": "(610) 896-3717",
     "hours": "Tue–Sat 10am–5pm",
-    "accepts": ["clothing", "shoes", "accessories", "household textiles"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "household textiles"
+    ],
     "website": "",
     "description": "Volunteer-run thrift shop supporting local nonprofits. Accepts gently used clothing."
   },
@@ -133,12 +193,19 @@
     "id": 11,
     "name": "Green Drop — Horsham",
     "type": "donation",
+    "county": "Montgomery",
     "address": "310 Horsham Rd, Horsham, PA 19044",
     "lat": 40.1839,
     "lng": -75.1372,
     "phone": "(888) 944-3767",
     "hours": "Mon–Sat 10am–6pm",
-    "accepts": ["clothing", "shoes", "accessories", "linens", "household items"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens",
+      "household items"
+    ],
     "website": "https://www.gogreendrop.com",
     "description": "Attended donation center benefiting military families. Drive-up, hassle-free drop-off."
   },
@@ -146,12 +213,18 @@
     "id": 12,
     "name": "Pottstown Cluster of Religious Communities",
     "type": "donation",
+    "county": "Montgomery",
     "address": "56 King St, Pottstown, PA 19464",
     "lat": 40.2454,
     "lng": -75.6494,
     "phone": "(610) 326-1610",
     "hours": "Mon–Fri 9am–4pm",
-    "accepts": ["clothing", "shoes", "coats", "blankets"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "coats",
+      "blankets"
+    ],
     "website": "",
     "description": "Faith-based organization distributing clothing to families in need in the Pottstown area."
   },
@@ -159,12 +232,16 @@
     "id": 13,
     "name": "H&M Garment Collecting — King of Prussia Mall",
     "type": "retail-takeback",
+    "county": "Montgomery",
     "address": "160 N Gulph Rd, King of Prussia, PA 19406",
     "lat": 40.0893,
-    "lng": -75.3890,
+    "lng": -75.389,
     "phone": "(610) 337-2122",
     "hours": "Mon–Sat 10am–9pm, Sun 11am–6pm",
-    "accepts": ["any brand clothing", "any condition textiles"],
+    "accepts": [
+      "any brand clothing",
+      "any condition textiles"
+    ],
     "website": "https://www2.hm.com/en_us/sustainability-at-hm/our-work/close-the-loop.html",
     "description": "Bring any brand clothing in any condition. Get a 15% off coupon per bag. Textiles are reworn, reused, or recycled."
   },
@@ -172,12 +249,16 @@
     "id": 14,
     "name": "The North Face Clothes the Loop — King of Prussia",
     "type": "retail-takeback",
+    "county": "Montgomery",
     "address": "160 N Gulph Rd, King of Prussia, PA 19406",
     "lat": 40.0883,
-    "lng": -75.3910,
+    "lng": -75.391,
     "phone": "(610) 265-4580",
     "hours": "Mon–Sat 10am–9pm, Sun 11am–6pm",
-    "accepts": ["any brand clothing", "any brand footwear"],
+    "accepts": [
+      "any brand clothing",
+      "any brand footwear"
+    ],
     "website": "https://www.thenorthface.com/about-us/responsibility/product/clothes-the-loop.html",
     "description": "Drop off clothing and footwear of any brand at The North Face store for recycling through the Clothes the Loop program."
   },
@@ -185,12 +266,17 @@
     "id": 15,
     "name": "Madewell Denim Recycling — King of Prussia",
     "type": "retail-takeback",
+    "county": "Montgomery",
     "address": "160 N Gulph Rd, King of Prussia, PA 19406",
     "lat": 40.0898,
     "lng": -75.3875,
     "phone": "(610) 337-3022",
     "hours": "Mon–Sat 10am–9pm, Sun 11am–6pm",
-    "accepts": ["denim jeans", "denim jackets", "any brand denim"],
+    "accepts": [
+      "denim jeans",
+      "denim jackets",
+      "any brand denim"
+    ],
     "website": "https://www.madewell.com/do-well",
     "description": "Bring old jeans (any brand) to Madewell and receive $20 off a new pair. Denim is recycled into housing insulation."
   },
@@ -198,13 +284,380 @@
     "id": 16,
     "name": "Planet Aid Drop-Off — Skippack",
     "type": "recycling-bin",
+    "county": "Montgomery",
     "address": "4000 Bridge Rd, Skippack, PA 19474",
     "lat": 40.2228,
     "lng": -75.3975,
     "phone": "",
     "hours": "24/7 drop-off",
-    "accepts": ["clothing", "shoes", "accessories", "linens"],
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens"
+    ],
     "website": "https://www.planetaid.org",
     "description": "Yellow Planet Aid textile collection bin in Skippack Township. Accepts clothing, shoes, and textiles in any condition for reuse and recycling."
+  },
+  {
+    "id": 17,
+    "name": "Goodwill Store & Donation Center — South Philadelphia",
+    "type": "donation",
+    "county": "Philadelphia",
+    "address": "2601 S Front St, Philadelphia, PA 19148",
+    "lat": 39.9236,
+    "lng": -75.1455,
+    "phone": "(215) 218-8550",
+    "hours": "Mon–Sat 10am–8pm, Sun 11am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "household textiles"
+    ],
+    "website": "https://www.goodwillkeystone.org",
+    "description": "Goodwill donation center accepting gently used clothing and textiles. Items not sold are recycled into new materials."
+  },
+  {
+    "id": 18,
+    "name": "Philly AIDS Thrift — South Street",
+    "type": "donation",
+    "county": "Philadelphia",
+    "address": "710 S 5th St, Philadelphia, PA 19147",
+    "lat": 39.9402,
+    "lng": -75.149,
+    "phone": "(215) 922-3186",
+    "hours": "Mon–Sat 11am–8pm, Sun 11am–7pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "vintage clothing",
+      "costumes"
+    ],
+    "website": "https://www.phillyaidsthrift.com",
+    "description": "Popular thrift store donating proceeds to AIDS-related causes. Accepts all clothing and accessories."
+  },
+  {
+    "id": 19,
+    "name": "Green Drop — Roxborough",
+    "type": "donation",
+    "county": "Philadelphia",
+    "address": "6101 Ridge Ave, Philadelphia, PA 19128",
+    "lat": 40.0341,
+    "lng": -75.2283,
+    "phone": "(888) 944-3767",
+    "hours": "Mon–Sat 10am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens",
+      "household items"
+    ],
+    "website": "https://www.gogreendrop.com",
+    "description": "Attended donation center benefiting military families. Drive-up drop-off with donation receipt."
+  },
+  {
+    "id": 20,
+    "name": "H&M Garment Collecting — Center City Philadelphia",
+    "type": "retail-takeback",
+    "county": "Philadelphia",
+    "address": "1510 Walnut St, Philadelphia, PA 19102",
+    "lat": 39.9494,
+    "lng": -75.167,
+    "phone": "(215) 563-9290",
+    "hours": "Mon–Sat 10am–8pm, Sun 11am–6pm",
+    "accepts": [
+      "any brand clothing",
+      "any condition textiles"
+    ],
+    "website": "https://www2.hm.com/en_us/sustainability-at-hm/our-work/close-the-loop.html",
+    "description": "Bring any brand clothing in any condition and receive a 15% off coupon. Textiles are reworn, reused, or recycled."
+  },
+  {
+    "id": 21,
+    "name": "Goodwill Store & Donation Center — Springfield",
+    "type": "donation",
+    "county": "Delaware",
+    "address": "1062 Baltimore Pike, Springfield, PA 19064",
+    "lat": 39.9294,
+    "lng": -75.3483,
+    "phone": "(610) 543-0430",
+    "hours": "Mon–Sat 9am–8pm, Sun 10am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "household textiles"
+    ],
+    "website": "https://www.goodwillkeystone.org",
+    "description": "Goodwill accepting gently used clothing for resale. Unsold textiles are recycled into fiber products."
+  },
+  {
+    "id": 22,
+    "name": "Salvation Army Family Store — Darby",
+    "type": "donation",
+    "county": "Delaware",
+    "address": "900 Main St, Darby, PA 19023",
+    "lat": 39.9186,
+    "lng": -75.2589,
+    "phone": "(610) 586-1498",
+    "hours": "Mon–Sat 9am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens"
+    ],
+    "website": "https://www.salvationarmy.org",
+    "description": "Salvation Army thrift store and donation center. Proceeds fund community assistance programs."
+  },
+  {
+    "id": 23,
+    "name": "Green Drop — Broomall",
+    "type": "donation",
+    "county": "Delaware",
+    "address": "2840 West Chester Pike, Broomall, PA 19008",
+    "lat": 39.9667,
+    "lng": -75.3617,
+    "phone": "(888) 944-3767",
+    "hours": "Mon–Sat 10am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens",
+      "household items"
+    ],
+    "website": "https://www.gogreendrop.com",
+    "description": "Attended donation center supporting military families. Easy drive-up drop-off with tax receipt provided."
+  },
+  {
+    "id": 24,
+    "name": "Planet Aid Drop-Off — Media",
+    "type": "recycling-bin",
+    "county": "Delaware",
+    "address": "1 Veterans Square, Media, PA 19063",
+    "lat": 39.9168,
+    "lng": -75.3878,
+    "phone": "",
+    "hours": "24/7 drop-off",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories"
+    ],
+    "website": "https://www.planetaid.org",
+    "description": "Yellow Planet Aid textile collection bin. Accepts clothing and shoes in any condition for global reuse and recycling."
+  },
+  {
+    "id": 25,
+    "name": "Goodwill Store & Donation Center — West Chester",
+    "type": "donation",
+    "county": "Chester",
+    "address": "959 Paoli Pike, West Chester, PA 19380",
+    "lat": 39.959,
+    "lng": -75.5793,
+    "phone": "(610) 696-3636",
+    "hours": "Mon–Sat 9am–8pm, Sun 10am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "household textiles"
+    ],
+    "website": "https://www.goodwillkeystone.org",
+    "description": "Goodwill accepting gently used clothing and textiles. Items are sold to fund job training programs."
+  },
+  {
+    "id": 26,
+    "name": "Salvation Army Family Store — Coatesville",
+    "type": "donation",
+    "county": "Chester",
+    "address": "345 E Lincoln Hwy, Coatesville, PA 19320",
+    "lat": 39.9828,
+    "lng": -75.8109,
+    "phone": "(610) 384-2090",
+    "hours": "Mon–Sat 9am–7pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens",
+      "blankets"
+    ],
+    "website": "https://www.salvationarmy.org",
+    "description": "Donation center and thrift store. All proceeds support Salvation Army community programs in Chester County."
+  },
+  {
+    "id": 27,
+    "name": "Green Drop — Exton",
+    "type": "donation",
+    "county": "Chester",
+    "address": "286 E Lincoln Hwy, Exton, PA 19341",
+    "lat": 40.0284,
+    "lng": -75.617,
+    "phone": "(888) 944-3767",
+    "hours": "Mon–Sat 10am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens",
+      "household items"
+    ],
+    "website": "https://www.gogreendrop.com",
+    "description": "Attended drive-up donation center benefiting the American Red Cross. Accepts all clothing and household textiles."
+  },
+  {
+    "id": 28,
+    "name": "Goodwill Store & Donation Center — Doylestown",
+    "type": "donation",
+    "county": "Bucks",
+    "address": "4275 County Line Rd, Chalfont, PA 18914",
+    "lat": 40.2793,
+    "lng": -75.21,
+    "phone": "(215) 997-5294",
+    "hours": "Mon–Sat 9am–8pm, Sun 10am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "household textiles"
+    ],
+    "website": "https://www.goodwillkeystone.org",
+    "description": "Goodwill donation center near Doylestown. Clothing and textiles accepted for resale and recycling."
+  },
+  {
+    "id": 29,
+    "name": "Salvation Army Family Store — Levittown",
+    "type": "donation",
+    "county": "Bucks",
+    "address": "2946 Bristol Pike, Bensalem, PA 19020",
+    "lat": 40.1066,
+    "lng": -74.9516,
+    "phone": "(215) 639-5227",
+    "hours": "Mon–Sat 9am–7pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens"
+    ],
+    "website": "https://www.salvationarmy.org",
+    "description": "Salvation Army thrift store accepting clothing donations. Proceeds fund social services in Bucks County."
+  },
+  {
+    "id": 30,
+    "name": "Habitat for Humanity ReStore — Chalfont",
+    "type": "donation",
+    "county": "Bucks",
+    "address": "3602 Swamp Rd, Doylestown, PA 18902",
+    "lat": 40.3054,
+    "lng": -75.1289,
+    "phone": "(215) 822-2708",
+    "hours": "Wed–Fri 10am–6pm, Sat 10am–4pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "household items"
+    ],
+    "website": "https://www.habitatmontdelco.org",
+    "description": "Habitat ReStore accepting gently used clothing and household goods. Sales fund home-building in Bucks County."
+  },
+  {
+    "id": 31,
+    "name": "Planet Aid Drop-Off — Newtown",
+    "type": "recycling-bin",
+    "county": "Bucks",
+    "address": "2842 S Eagle Rd, Newtown, PA 18940",
+    "lat": 40.2285,
+    "lng": -74.9472,
+    "phone": "",
+    "hours": "24/7 drop-off",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories"
+    ],
+    "website": "https://www.planetaid.org",
+    "description": "Yellow Planet Aid collection bin for textile recycling. Accepts clothing and shoes in any condition."
+  },
+  {
+    "id": 32,
+    "name": "Goodwill Store & Donation Center — Allentown",
+    "type": "donation",
+    "county": "Lehigh",
+    "address": "1740 Catasauqua Rd, Allentown, PA 18109",
+    "lat": 40.626,
+    "lng": -75.444,
+    "phone": "(610) 264-7530",
+    "hours": "Mon–Sat 9am–8pm, Sun 10am–6pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "household textiles"
+    ],
+    "website": "https://www.goodwillkeystone.org",
+    "description": "Goodwill donation center in the Lehigh Valley. Clothing and textiles accepted for resale and recycling programs."
+  },
+  {
+    "id": 33,
+    "name": "Salvation Army Family Store — Allentown",
+    "type": "donation",
+    "county": "Lehigh",
+    "address": "344 N 7th St, Allentown, PA 18102",
+    "lat": 40.61,
+    "lng": -75.481,
+    "phone": "(610) 432-4481",
+    "hours": "Mon–Sat 9am–7pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories",
+      "linens",
+      "blankets"
+    ],
+    "website": "https://www.salvationarmy.org",
+    "description": "Salvation Army thrift store and donation center serving the Lehigh Valley community."
+  },
+  {
+    "id": 34,
+    "name": "Planet Aid Drop-Off — Whitehall",
+    "type": "recycling-bin",
+    "county": "Lehigh",
+    "address": "2600 MacArthur Rd, Whitehall, PA 18052",
+    "lat": 40.6465,
+    "lng": -75.496,
+    "phone": "",
+    "hours": "24/7 drop-off",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "accessories"
+    ],
+    "website": "https://www.planetaid.org",
+    "description": "Yellow Planet Aid textile collection bin near Whitehall Mall. Accepts all clothing and shoes for reuse and recycling."
+  },
+  {
+    "id": 35,
+    "name": "Lehigh County Recycling Center",
+    "type": "municipal",
+    "county": "Lehigh",
+    "address": "7227 Industrial Blvd, Allentown, PA 18106",
+    "lat": 40.593,
+    "lng": -75.538,
+    "phone": "(610) 782-3073",
+    "hours": "Mon–Fri 7am–3pm, Sat 8am–12pm",
+    "accepts": [
+      "clothing",
+      "shoes",
+      "textiles",
+      "household items"
+    ],
+    "website": "https://www.lehighcounty.org",
+    "description": "County-operated recycling facility accepting textiles. Part of Lehigh County's comprehensive recycling program."
   }
 ]

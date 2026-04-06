@@ -1,0 +1,37 @@
+[
+  {
+    "name": "All Pennsylvania",
+    "center": [40.9, -77.8],
+    "zoom": 7
+  },
+  {
+    "name": "Montgomery",
+    "center": [40.15, -75.30],
+    "zoom": 11
+  },
+  {
+    "name": "Philadelphia",
+    "center": [39.9526, -75.1652],
+    "zoom": 12
+  },
+  {
+    "name": "Delaware",
+    "center": [39.9167, -75.3990],
+    "zoom": 12
+  },
+  {
+    "name": "Chester",
+    "center": [39.9620, -75.7480],
+    "zoom": 11
+  },
+  {
+    "name": "Bucks",
+    "center": [40.3340, -75.1070],
+    "zoom": 11
+  },
+  {
+    "name": "Lehigh",
+    "center": [40.6023, -75.4714],
+    "zoom": 12
+  }
+]
